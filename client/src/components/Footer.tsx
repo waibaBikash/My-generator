@@ -15,7 +15,11 @@ export default function Footer() {
                 transition={{ type: "spring", stiffness: 280, damping: 70, mass: 1 }}
             >
                 <Link to='/'>
-                    <img className="size-8 aspect-square" src="/favicon.svg" alt="footer logo" width={32} height={32} />
+                    <img 
+                    className="size-8 aspect-square" 
+                    src="/favicon.svg" alt="footer logo"
+                     width={32}
+                      height={32} />
                 </Link>
                 {footerData.map((section, index) => (
                     <div key={index}>
@@ -23,7 +27,8 @@ export default function Footer() {
                         <ul className="mt-2 space-y-2">
                             {section.links.map((link: IFooterLink, index: number) => (
                                 <li key={index}>
-                                    <Link to={link.href} className="hover:text-pink-600 transition">
+                                    <Link to={link.href} 
+                                    className="hover:text-pink-600 transition">
                                         {link.name}
                                     </Link>
                                 </li>

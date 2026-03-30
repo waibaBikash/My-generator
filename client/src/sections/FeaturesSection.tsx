@@ -7,7 +7,8 @@ import type { IFeature } from "../types";
 
 export default function FeaturesSection() {
     return (
-        <div id="features" className="px-4 md:px-16 lg:px-24 xl:px-32">
+        <div id="features"
+         className="px-4 md:px-16 lg:px-24 xl:px-32">
             <SectionTitle text1="Features" text2="Why use our generator?" text3="Create stunning thumbnails that get clicks, without the hassle." />
             <div className="flex flex-wrap items-center justify-center gap-6 md:gap-4 mt-16 px-6">
                 {featuresData.map((feature: IFeature, index: number) => (
@@ -60,7 +61,9 @@ export default function FeaturesSection() {
                         <p className="text-slate-300 mt-2">Stop guessing and start ranking. Our AI creates desings proven to capture attention.</p>
                         <a href="https://prebuiltui.com" className="group flex items-center gap-2 mt-4 text-pink-600 hover:text-pink-700 transition">
                             Start Generating free
-                            <ArrowUpRight className="size-5 group-hover:translate-x-0.5 transition duration-300" />
+
+                            <ArrowUpRight
+                             className="size-5 group-hover:translate-x-0.5 transition duration-300" />
                         </a>
                     </motion.div>
                 </div>

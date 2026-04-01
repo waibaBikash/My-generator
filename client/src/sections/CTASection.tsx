@@ -14,7 +14,8 @@ export default function CTASection() {
             transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
             <div>
-                <motion.h1 className="text-4xl md:text-[46px] md:leading-15 font-semibold bg-linear-to-r from-white to-pink-400 text-transparent bg-clip-text"
+                <motion.h1
+                 className="text-4xl md:text-[46px] md:leading-15 font-semibold bg-linear-to-r from-white to-pink-400 text-transparent bg-clip-text"
                     initial={{ y: 80, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: true }}
@@ -31,7 +32,8 @@ export default function CTASection() {
                     Join Thousands of creators using AI to boast their CTR.
                 </motion.p>
             </div>
-            <motion.button onClick={()=> navigate('/generate')} className="px-12 py-3 text-slate-800 bg-white hover:bg-slate-200 rounded-full text-sm mt-4"
+            <motion.button onClick={()=> navigate('/generate')}
+               className="px-12 py-3 text-slate-800 bg-white hover:bg-slate-200 rounded-full text-sm mt-4"
                 initial={{ y: 80, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}

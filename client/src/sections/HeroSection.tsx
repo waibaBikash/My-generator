@@ -33,7 +33,8 @@ export default function HeroSection() {
                     <ChevronRightIcon size={16} className="group-hover:translate-x-0.5 transition duration-300" />
                 </p>
             </motion.a>
-            <motion.h1 className="text-5xl/17 md:text-6xl/21 font-medium max-w-3xl text-center"
+            <motion.h1
+                className="text-5xl/17 md:text-6xl/21 font-medium max-w-3xl text-center"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -54,10 +55,13 @@ export default function HeroSection() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
             >
-                <button onClick={()=>navigate('/generate')} className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-7 h-11">
+                <button 
+                onClick={()=>navigate('/generate')} 
+                className="bg-pink-600 hover:bg-pink-700 text-white rounded-full px-7 h-11">
                     Generate now
                 </button>
-                <button className="flex items-center gap-2 border border-pink-900 hover:bg-pink-950/50 transition rounded-full px-6 h-11">
+                <button 
+                className="flex items-center gap-2 border border-pink-900 hover:bg-pink-950/50 transition rounded-full px-6 h-11">
                     <VideoIcon strokeWidth={1} />
                     <span>See how it works</span>
                 </button>
